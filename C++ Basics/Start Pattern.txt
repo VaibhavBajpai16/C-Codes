@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+
+int main(){
+
+int N;
+    cin>>N;
+    int i=1;
+    while(i<=N)
+    {
+        int sp =0;
+        while(sp < N-i)
+        {
+        cout<<" ";
+        sp++;
+        }
+        int st = 0;
+        while(st<2*i-1){
+            cout<<"*";
+            st++;
+        }
+        i++;
+        cout<<endl;
+        
+    }
+    
+}
