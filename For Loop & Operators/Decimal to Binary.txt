@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	// Write your code here
+    long int   N,ans= 0 ,pv=1;
+    cin>>N;
+    
+    while(N>0){
+        int rem = N%2;
+        ans = ans+rem*pv;
+        pv= pv*10;
+        N=N/2;
+        
+        
+        
+    }
+    cout<<ans<<endl;
+	
+}

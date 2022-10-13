@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+   char c ;
+   c = cin.get();
+    int alp = 0,digit=0 ;
+    int space = 0 ;
+    
+    
+    while(c!='$'){
+        // count++;
+        if(c==' '||c=='	'||c=='\n')
+            space++;
+        else if((c-'0')>=0 &&(c-'0')<=9)
+            digit++;
+        else if((c-'a')>=0&&(c-'a')<26)
+            alp++;
+        c = cin.get();
+        // cout<<count<<endl;
+        
+    }
+    cout<<alp<<" "<<digit<<" "<<space<<endl;
+    }

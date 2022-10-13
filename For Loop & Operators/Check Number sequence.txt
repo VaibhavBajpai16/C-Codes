@@ -1,0 +1,51 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	// Write your code here
+	int n ;
+    cin>>n;
+    
+    
+    int prev ;
+    cin>>prev ;
+    bool ans = true ;
+    bool dec = true ;
+    while(n-1>0){
+        int curr ; 
+        cin>>curr;
+        
+        if(prev==curr){
+            
+            ans = false ;
+            break ;
+            
+        }
+        else if(curr>prev && dec ==true)
+        {
+           dec= false ;
+           prev = curr ;
+            
+        }
+        else if (curr<prev && dec == false ){
+            ans = false ;
+            break ;
+            
+        }
+        else {
+            prev = curr ;
+        }
+        n--;
+        
+        
+    }
+    if (ans ==true){
+        cout<<"true"<<endl;
+        
+    }
+    else if (ans == false ){
+        cout<<"false"<<endl;
+        
+    }
+    
+}
